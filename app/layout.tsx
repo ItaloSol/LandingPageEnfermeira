@@ -41,13 +41,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Enfermeira Selma Silva | Podiatra Especialista em Feridas',
     description: 'Tratamento especializado de feridas complexas e podologia com tecnologia avançada. Atendimento humanizado para pacientes diabéticos e idosos.',
-    url: 'https://selmasilva.com.br',
+    url: 'https://enfermeiraselmasilva.web.app/',
     siteName: 'Enfermeira Selma Silva',
     locale: 'pt_BR',
     type: 'website',
     images: [
       {
-        url: '/hero.webp',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Enfermeira Selma Silva',
