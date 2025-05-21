@@ -25,10 +25,10 @@ export default function Footer() {
               Especialista em tratamento de feridas complexas e cuidados com pacientes diabéticos.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className="hover:text-blue-400 transition-colors">
+              <Link href="https://facebook.com/selma.maria" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Facebook className="w-6 h-6" />
               </Link>
-              <Link href="https://instagram.com" className="hover:text-pink-400 transition-colors">
+              <Link href="https://instagram.com/enfa_selmasilva" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
                 <Instagram className="w-6 h-6" />
               </Link>
             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />
-                <span>contato@selmasilva.com.br</span>
+                <span>celmaliliane@gmail.com</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-1" />

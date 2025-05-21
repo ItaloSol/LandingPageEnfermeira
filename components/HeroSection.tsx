@@ -33,7 +33,7 @@ export default function HeroSection() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-light text-gray-900 mb-6">
-              Cuidado Especializado para Feridas Complexas e Podologia
+              Cuidado Especializado para Feridas Complexas e Podiatria
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8">
               Tratamento personalizado com tecnologia avançada e anos de experiência
