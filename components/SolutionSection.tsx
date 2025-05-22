@@ -9,29 +9,29 @@ export default function SolutionSection() {
     {
       name: 'Laserterapia',
       description: 'Acelera cicatrização e reduz inflamação',
-      beforeImage: '/laserterapia.jpeg',
-      afterImage: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80',
+      beforeImage: '/laserterapia.webp',
+      afterImage: '/Hipertensa.webp',
       whatsappMessage: 'Olá, gostaria de saber mais sobre o tratamento com Laserterapia.'
     },
     {
       name: 'Ozonioterapia',
       description: 'Combate infecções e estimula regeneração',
-      beforeImage: '/ozonio.jpeg',
-      afterImage: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80',
+      beforeImage: '/ozonio.webp',
+      afterImage: '/Hipertensa_d.webp',
       whatsappMessage: 'Olá, gostaria de saber mais sobre o tratamento com Ozonioterapia.'
     },
     {
       name: 'PRP e PRF',
       description: 'Fatores de crescimento natural',
-      beforeImage: '/prf.jpeg',
-      afterImage: '/prf_d.jpeg',
+      beforeImage: '/prf.webp',
+      afterImage: '/mobilistico.webp',
       whatsappMessage: 'Olá, gostaria de saber mais sobre o tratamento com PRP e PRF.'
     },
     {
       name: 'TPN',
       description: 'Terapia por Pressão Negativa',
-      beforeImage: '/tpn.jpeg',
-      afterImage: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80',
+      beforeImage: '/tpn.webp',
+      afterImage: '/tpn_d.webp',
       whatsappMessage: 'Olá, gostaria de saber mais sobre o tratamento com TPN.'
     }
   ];
