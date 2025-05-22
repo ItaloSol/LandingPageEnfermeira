@@ -1,39 +1,49 @@
 'use client';
 
-import { Zap, Shield, Activity, Droplet, Wind, Layers } from 'lucide-react';
+import {
+  HeartPulse, // Vasculares
+  Thermometer, // Infecciosas
+  Droplet,    // Dermatológicas
+  Flame,      // Traumáticas e Outras
+} from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function ServicesSection() {
-  const services = [
+  const woundGroups = [
     {
-      name: 'Laserterapia',
-      description: 'Tecnologia avançada que estimula a regeneração celular e acelera o processo de cicatrização através de luz concentrada.',
-      icon: Zap
+      name: 'Feridas Vasculares',
+      icon: HeartPulse,
+      wounds: [
+        'Úlceras venosas',
+        'Úlceras arteriais',
+        'Pé diabético'
+      ]
     },
     {
-      name: 'Ozonioterapia',
-      description: 'Tratamento que utiliza ozônio medicinal para combater infecções, melhorar a oxigenação dos tecidos e estimular o sistema imunológico.',
-      icon: Wind
+      name: 'Feridas Infecciosas',
+      icon: Thermometer,
+      wounds: [
+        'Erisipela',
+        'Fungos'
+      ]
     },
     {
-      name: 'PRP',
-      description: 'Plasma Rico em Plaquetas: utiliza seu próprio sangue para criar um concentrado de fatores de crescimento que aceleram a cicatrização.',
-      icon: Droplet
+      name: 'Feridas Dermatológicas',
+      icon: Droplet,
+      wounds: [
+        'Dermatite',
+        'Psoríase'
+      ]
     },
     {
-      name: 'PRF',
-      description: 'Plasma Rico em Fibrina: evolução do PRP, criando uma matriz de fibrina que libera fatores de crescimento por mais tempo.',
-      icon: Activity
-    },
-    {
-      name: 'TPN',
-      description: 'Terapia por Pressão Negativa: sistema avançado que promove a cicatrização através do controle preciso da pressão na ferida.',
-      icon: Shield
-    },
-    {
-      name: 'Coberturas especiais',
-      description: 'Materiais tecnológicos específicos para cada tipo de lesão, garantindo o ambiente ideal para a cicatrização.',
-      icon: Layers
+      name: 'Feridas Traumáticas e Outras',
+      icon: Flame,
+      wounds: [
+        'Lesão por Pressão',
+        'Queimaduras',
+        'Deiscência cirúrgica',
+        'Unha encravada'
+      ]
     }
   ];
 
@@ -66,14 +76,14 @@ export default function ServicesSection() {
     <section className="py-16 bg-[#F8F9FA]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-light text-center mb-4">
-          Nossas Ferramentas de Alta Performance
+          Tipos de Feridas Tratadas
         </h2>
         <p className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
-          Combinamos tecnologias avançadas para oferecer o tratamento mais eficaz e personalizado para cada caso
+          Tratamento especializado para diferentes tipos de feridas agudas e crônicas
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon;
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {woundGroups.map((group, index) => {
+            const Icon = group.icon;
             return (
               <div
                 key={index}
@@ -83,10 +93,12 @@ export default function ServicesSection() {
                 <div className="bg-[#E6F3FF] w-12 h-12 rounded-lg flex items-center justify-center mb-6">
                   <Icon className="w-6 h-6 text-[#1E90FF]" />
                 </div>
-                <h3 className="text-xl font-medium mb-4">{service.name}</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
+                <h3 className="text-xl font-medium mb-2">{group.name}</h3>
+                <ul className="text-gray-600 leading-relaxed list-disc list-inside">
+                  {group.wounds.map((wound, i) => (
+                    <li key={i}>{wound}</li>
+                  ))}
+                </ul>
               </div>
             );
           })}
