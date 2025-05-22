@@ -9,17 +9,17 @@ export default function PhotoGallery() {
 
   const photos = [
     {
-      url: "/mobilistico.webp",
+      url: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80",
       alt: "Caso de sucesso - Acidente automobilístico",
       description: "Acidente automobilístico: paciente jovem com apenas 10 sessões chegamos a esse resultado"
     },
     {
-      url: "/Erisipela.webp",
+      url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80",
       alt: "Caso de sucesso - Erisipela",
       description: "Erisipela: em apenas 4 sessões e menos de 22 dias chegamos a esse resultado. Paciente hipertenso, diabético e obeso"
     },
     {
-      url: "/Hipertensa.webp",
+      url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
       alt: "Caso de sucesso - Úlcera Arterial",
       description: "Paciente 77 anos: Hipertensa, diabética, cardíaca, com úlcera Arterial. Foi orientada pelo médico vascular a retirar o tendão mas o filho decidiu não fazer a cirurgia a pedido da mãe (PCT). Continuamos o tratamento e chegamos a este resultado incrível sem precisar da cirurgia"
     }
