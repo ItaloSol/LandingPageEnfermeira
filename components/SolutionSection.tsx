@@ -31,7 +31,6 @@ export default function SolutionSection() {
       name: 'TPN',
       description: 'Terapia por Pressão Negativa',
       beforeImage: '/tpn.webp',
-      afterImage: '/tpn_d.webp',
       whatsappMessage: 'Olá, gostaria de saber mais sobre o tratamento com TPN.'
     }
   ];
@@ -100,17 +99,19 @@ export default function SolutionSection() {
                       O tratamento
                     </div>
                   </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden">
-                    <Image
-                      src={tech.afterImage}
-                      alt={`Depois do tratamento com ${tech.name}`}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-center py-1 text-sm">
-                      Depois
+                  {tech.afterImage && (
+                    <div className="relative aspect-square rounded-lg overflow-hidden">
+                      <Image
+                        src={tech.afterImage}
+                        alt={`Depois do tratamento com ${tech.name}`}
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-center py-1 text-sm">
+                        Depois
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 <a
