@@ -1,8 +1,13 @@
 'use client';
 
 import { PhoneCall } from 'lucide-react';
+import { contact } from '@/lib/fbPixel';
 
 export default function WhatsAppButton() {
+  const handleClick = () => {
+    contact(); // Track contact event
+  };
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <div className="absolute -top-16 right-0 bg-white p-4 rounded-lg shadow-lg mb-4 w-64 text-sm text-gray-700 hidden group-hover:block">
@@ -12,6 +17,7 @@ export default function WhatsAppButton() {
         href={`https://wa.me/5581997814078?text=${encodeURIComponent(
           'Olá Selma, sou paciente 50+ com diabetes e quero agendar uma avaliação.'
         )}`}
+        onClick={handleClick}
         className="group flex items-center gap-2 bg-[#1E90FF] text-white px-6 py-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300"
       >
         <PhoneCall className="w-6 h-6" />
